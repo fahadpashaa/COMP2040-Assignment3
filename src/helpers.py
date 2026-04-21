@@ -37,4 +37,15 @@ def top_n(df, column, n=10):
     """
     return df[column].value_counts().head(n)
 
+
+def group_and_count(df, column):
+    """
+    Group the dataset by a specific column and return the number of rows
+    in each group. I use this when I want a quick summary like incidents
+    per area, per crime type, or per year without rewriting the same
+    groupby logic each time.
+    """
+    return df.groupby(column).size().sort_values(ascending=False)
+
+
     
