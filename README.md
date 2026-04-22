@@ -14,7 +14,7 @@ This project focuses on:
 - building **one simple predictive model** (Logistic Regression)  
 - interpreting the results and summarizing the workflow  
 
-The goal is not to build a perfect model, but to show a clean, reproducible analysis pipeline.
+The goal is not to build a perfect model, but to demonstrate a clean, reproducible analysis pipeline from raw data to a basic predictive model.
 
 ---
 
@@ -22,7 +22,7 @@ The goal is not to build a perfect model, but to show a clean, reproducible anal
 
 ### **Install Required Packages**
 
-Run this command before opening the notebook:
+Before running the notebook, install the necessary Python packages:
 `pip install pandas numpy matplotlib seaborn scikit-learn`
 
 
@@ -33,8 +33,12 @@ If a `requirements.txt` file is included, you can also do:
 ### **Run the Notebook**
 
 1. Clone the repository  
-2. Open `notebook.ipynb`  
-3. Run all cells from top to bottom  
+2. Ensure the dataset is placed inside the `/data` folder  
+3. Open `notebook.ipynb`  
+4. Run all cells from top to bottom  
+
+The notebook uses **relative paths**, so as long as the dataset is inside the `data/` directory, the analysis will run on any machine.
+
 
 ---
 
@@ -116,17 +120,4 @@ This project demonstrates a full data analysis pipeline:
 - interpreted the results  
 
 The project highlights how data preparation choices can strongly influence model performance. In a real project, I would avoid dropping that many rows and would use imputation or a model that handles missing values.
-
----
-
-## 9. Optional Extensions
-
-If this project were expanded, possible next steps include:
-
-- using models that handle missing values  
-- adding hyperparameter tuning  
-- building a dashboard  
-- performing deeper geographic analysis  
-
-These are not required for the assignment but could be added later.
 
