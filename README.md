@@ -40,7 +40,8 @@ If a `requirements.txt` file is included, you can also do:
 
 ## 3. Project Structure
 
-![Project Structure](images/project_structure.png)
+![Project Structure](images/Project-Structure.png)
+
 
 
 ---
